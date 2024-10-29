@@ -1,5 +1,9 @@
 @import url('https://fonts.bunny.net/css?family=dm-mono:300,400');
 
+/* Implement "debloat" scripts */
+@import url("https://croissantdunord.github.io/discord-adblock/adblock.css");
+@import url("https://croissantdunord.github.io/discord-adblock/adblock-extras.css");
+
 :root {
 	--font: 'DM Mono';
 	letter-spacing: -0.05ch;
