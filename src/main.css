@@ -184,6 +184,9 @@ svg[class^=slider_] > rect[fill='white'] /* settings checkbuttons slider */ {
 [class^=content_] > [class^=resizeHandle_] /* pretend to be a margin */ {
 	width: var(--pad);
 }
+.timestamp_f9f2ca.latin24CompactTimeStamp_f9f2ca {
+    width: 3.3rem;
+}
 
 /* fix inbox overflow and hiding window controls */
 [class^='notAppAsidePanel_'] > [class^='layerContainer_'] {
@@ -244,6 +247,11 @@ svg[class^=slider_] > rect[fill='white'] /* settings checkbuttons slider */ {
 	}
 }
 
+/* fix double left border at friends' activity now lane */
+.scroller_bf550a {
+    border-left: 0px solid var(--background-modifier-accent);
+}
+
 /*"ReadAllNotifications" button*/
 .vc-ranb-button {
 	font-size: 12px;
@@ -290,7 +298,7 @@ svg[class^=slider_] > rect[fill='white'] /* settings checkbuttons slider */ {
 .clipContainer_b11c5e {
 	margin-top: 0;
 }
-.textArea_d0696b {
+.textArea_bdf0de {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -446,7 +454,7 @@ svg[class^=slider_] > rect[fill='white'] /* settings checkbuttons slider */ {
 .container_adcaac /* vc panel */ {
 	padding: var(--txt-pad) var(--txt-pad) calc(var(--txt-pad) / 2) var(--txt-pad);
 }
-.horizontal_bba380 > .flex_bba380 /* fix voice connected cut off */ {
+.horizontal_dc333f > .flex_dc333f /* fix voice connected cut off */ {
 	margin-left: 4px;
 }
 .guilds_a4d4d9,
@@ -550,7 +558,7 @@ svg[class^=slider_] > rect[fill='white'] /* settings checkbuttons slider */ {
 .theme-dark,
 html.theme-light {
 	--action-sheet-gradient-bg: var(--primary-630);
-	--activity-card-background: var(--primary-700);
+	--activity-card-background: var(--bg-0);
 	--activity-card-icon-overlay: hsl(223 calc(1 * 6.7%) 20.6% / 0.85);
 	--alert-bg: var(--primary-600);
 	--android-navigation-bar-background: var(--primary-830);
@@ -581,16 +589,16 @@ html.theme-light {
 	--background-tertiary: var(--bg-0);
 	--bg-backdrop: hsl(0 calc(1 * 0%) 0% / 0.7);
 	--bg-backdrop-no-opacity: var(--black-500);
-	--bg-base-primary: var(--primary-600);
-	--bg-base-secondary: var(--primary-630);
+	--bg-base-primary: var(--bg-0);
+	--bg-base-secondary: var(--bg-1);
 	--bg-base-tertiary: var(--primary-660);
 	--bg-brand: var(--brand-500);
-	--bg-mod-faint: var(--bg-1);
+	--bg-mod-faint: var(--bg-0);
 	--bg-mod-strong: var(--bg-2);
 	--bg-mod-subtle: hsl(228 calc(1 * 6%) 32.5% / 0.48);
-	--bg-surface-overlay: var(--bg-0);
+	--bg-surface-overlay: var(--bg-1);
 	--bg-surface-overlay-tmp: var(--primary-800);
-	--bg-surface-raised: var(--primary-600);
+	--bg-surface-raised: var(--bg-0);
 	--black: var(--black-500);
 	--blur-fallback: hsl(225 calc(1 * 6.3%) 12.5% / 0.96);
 	--blur-fallback-pressed: hsl(225 calc(1 * 7.1%) 11% / 0.96);
@@ -739,8 +747,8 @@ html.theme-light {
 	--logo-primary: var(--white-500);
 	--mention-background: var(--mention-bg);
 	--mention-foreground: var(--mention-txt);
-	--modal-background: var(--primary-600);
-	--modal-footer-background: var(--primary-630);
+	--modal-background: var(--bg-1);
+	--modal-footer-background: var(--bg-0);
 	--navigator-header-tint: var(--white-500);
 	--panel-bg: var(--primary-600);
 	--polls-normal-fill-hover: var(--primary-600);
@@ -955,4 +963,3 @@ html.theme-light {
   transform: none!important;
 }
 /* end 909 commits */
-
